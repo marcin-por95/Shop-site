@@ -2,36 +2,42 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; // Wyśrodkowanie elementów w poziomie
-  align-items: center; // Opcjonalne: wyśrodkowanie elementów w pionie
-  margin: 0 auto; // Wyśrodkowanie całego kontenera galerii
-  max-width: 900px; // Dostosowanie szerokości kontenera
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .gallery-item {
-  flex: 0 0 250px; // Szerokość elementu ustawiona na 250px
-  height: 250px; // Wysokość elementu ustawiona na 250px
+  flex: 0 0 calc(33.333% - 20px);
   position: relative;
   overflow: hidden;
-  margin: 10px; // Odstęp między elementami
+  margin-bottom: 20px;
 }
 
 .gallery-item img {
-  width: 100%; // Szerokość obrazu dopasowana do kontenera
-  height: 100%; // Wysokość obrazu dopasowana do kontenera
-  object-fit: cover; // Obraz będzie pokrywał całą dostępną przestrzeń bez deformacji
+  width: 100%;
+  height: 250px;  /* Stała wysokość dla każdego zdjęcia */
+  object-fit: cover;  /* Zachowuje proporcje zdjęcia i wypełnia całą przestrzeń kontenera */
   transition: transform 0.3s;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1); // Powiększenie obrazu po najechaniu
+  transform: scale(1.1);
 }
 
 .gallery-item p {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+  text-align: center;
+  margin-top: 10px;
   color: #383838;
   font-weight: bold;
-  z-index: 2; // Tekst będzie widoczny na obrazie
+}
+.gallery-item {
+  flex: 0 0 calc(33.333% - 20px);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Ustawia kierunek główny na pionowy */
+  justify-content: center; /* Wyśrodkowuje zawartość wzdłuż osi głównej (pionowej) */
+  align-items: center; /* Wyśrodkowuje zawartość wzdłuż osi poprzecznej (poziomej) */
 }

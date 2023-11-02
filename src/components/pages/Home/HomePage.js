@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../../components/common/NavBar/NavBar';
 import Carousel from "nuka-carousel";
 import ImageGallery from '../ImageGallery/ImageGallery';
+import Footer from "../../common/Footer/Footer";
 
 function HomePage() {
     return (
@@ -26,11 +27,10 @@ function HomePage() {
                     <p>This collection is all about making a statement with vibrant colors and bold finishes.</p>
                 </section>
 
-                {/* Tutaj dodajemy naszą galerię zdjęć */}
                 <ImageGallery />
 
-                {/* Można dodać więcej sekcji i treści zgodnie z potrzebami */}
             </main>
+            <Footer />
         </div>
     );
 }
