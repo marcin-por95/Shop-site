@@ -44,3 +44,15 @@ nav ul li a {
   background-color: #000;
   color: #fff;
 }
+.productCarousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.productCarousel img {
+  width: 100%; /* Szerokość obrazu to 100% szerokości karuzeli */
+  height: 400px; /* Stała wysokość obrazu to 400px */
+  object-fit: cover; /* Obraz zostanie przycięty do odpowiednich wymiarów, zachowując proporcje */
+}
+
+
