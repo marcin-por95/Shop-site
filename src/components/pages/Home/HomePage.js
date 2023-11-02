@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../../components/common/NavBar/NavBar';
 import Carousel from "nuka-carousel";
+import ImageGallery from '../ImageGallery/ImageGallery';
 
 function HomePage() {
     return (
@@ -19,13 +20,15 @@ function HomePage() {
                     <img src="/images/image4.jpg" alt="Opis zdjęcia 4" />
                 </Carousel>
 
-
-
                 <section className="collection">
                     <h2>NASZE PRODUKTY</h2>
-                    <h3>JOZY AND MARCO</h3>
+                    <h3>DLA CIAŁA I DUSZ</h3>
                     <p>This collection is all about making a statement with vibrant colors and bold finishes.</p>
                 </section>
+
+                {/* Tutaj dodajemy naszą galerię zdjęć */}
+                <ImageGallery />
+
                 {/* Można dodać więcej sekcji i treści zgodnie z potrzebami */}
             </main>
         </div>

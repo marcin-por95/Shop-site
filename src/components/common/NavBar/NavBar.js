@@ -1,6 +1,5 @@
 import React from 'react';
 import './NavBar.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Navbar() {
     return (
         <header>
@@ -8,7 +7,6 @@ function Navbar() {
             <nav>
                 <ul>
                     <a href="/koszyk">
-                        <FontAwesomeIcon icon={faCartShopping} />
                     </a>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SHOP</a></li>
