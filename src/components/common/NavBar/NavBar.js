@@ -6,11 +6,9 @@ function Navbar() {
             <h1>L U C H I A N A</h1>
             <nav>
                 <ul>
-                    <a href="/koszyk">
-                    </a>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/Products">SHOP</a></li>
+                    <li><a href="/Kontakt">CONTACT</a></li>
                 </ul>
 
             </nav>

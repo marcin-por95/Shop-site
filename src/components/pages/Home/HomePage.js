@@ -4,6 +4,7 @@ import Carousel from "nuka-carousel";
 import ImageGallery from '../ImageGallery/ImageGallery';
 import Footer from "../../common/Footer/Footer";
 
+
 function HomePage() {
     return (
         <div>
@@ -31,6 +32,7 @@ function HomePage() {
 
             </main>
             <Footer />
+     
         </div>
     );
 }
